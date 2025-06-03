@@ -18,7 +18,6 @@
 │   ├── vectorizer.pkl
 │   └── label_encoder.pkl
 ├── processed_input.csv     # Предобработанные входные данные
-├── training.log            # Лог обучения и метрик
 ├── requirements.txt        # Список зависимостей
 ├── Dockerfile              # Docker-описание для запуска
 ```
@@ -90,7 +89,7 @@ Silhouette Score показывает, что кластеры имеют нек
      }
      ```
 
-После обучения в директории [`models/`](./models) сохраняются:
+После обучения в директории [`models`](./models) сохраняются:
 
 - `model.pkl` — обученная модель `LogisticRegression`
 - `vectorizer.pkl` — TF-IDF векторизатор
